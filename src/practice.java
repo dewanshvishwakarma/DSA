@@ -29,8 +29,6 @@ public class practice {
         int[] a =prefix(arr);
         print(a);
 
-        System.out.println("dewansh cishwakarma");
-
 
 
 
