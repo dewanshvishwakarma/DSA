@@ -1,6 +1,5 @@
 import java.util.Scanner;
-
-public class sumOFArray1 {
+public class SumOfTwoArray1 {
 
  static int[] takeInput(){
      Scanner sc=new Scanner(System.in);

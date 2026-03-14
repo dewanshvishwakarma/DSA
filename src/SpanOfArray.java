@@ -1,7 +1,5 @@
 import java.util.Scanner;
 //Q1  find sapn of array it means subtraction of max and min day 2
-
-
 public class SpanOfArray {
     public static void main(String[] args){
         Scanner sc=new Scanner(System.in);
