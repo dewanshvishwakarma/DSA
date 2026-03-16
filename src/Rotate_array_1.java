@@ -8,10 +8,12 @@ public class Rotate_array_1 {
             j--;
         }
     }
-
     static void Rotate(int[] a,int k ){
         int n= a.length;
         k=k%n;
+        if(k<0){
+            k=k+n;
+        }
         reverse(a,0,n-k-1);
         reverse(a,n-k,n-1);
         reverse(a,0,n-1);
