@@ -1,3 +1,5 @@
+package arrays;
+
 public class ThirdLargest {
     static int Third_Largest(int[] a){
         int largest=Integer.MIN_VALUE;

@@ -1,3 +1,5 @@
+package arrays;
+
 import java.util.Scanner;
 // Rotate the given array by k step where k is non-negative
 //simple approach two loop

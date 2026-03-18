@@ -1,3 +1,5 @@
+package arrays;
+
 public class CountEvenOdd {
     static int[] Count(int[] arr){
         int n=arr.length;

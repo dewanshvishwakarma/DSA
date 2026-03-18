@@ -1,3 +1,4 @@
+package arrays;
 
 public class MoveZero {
     static void Swap(int[] nums, int i, int j){

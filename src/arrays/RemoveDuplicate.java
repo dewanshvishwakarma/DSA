@@ -1,3 +1,5 @@
+package arrays;
+
 public class RemoveDuplicate {
     static int  Duplicate(int[] a){
         int i=0;

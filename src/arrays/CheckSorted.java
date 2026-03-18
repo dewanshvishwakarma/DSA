@@ -1,3 +1,5 @@
+package arrays;
+
 public class CheckSorted {
     static boolean sorted(int[] a){
         boolean check=true;
