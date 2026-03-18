@@ -11,7 +11,7 @@ public class MoveZero {
         int n= nums.length;
         int non_Zero=0;
         for (int i=0;i<n;i++){
-            if(nums[i]!=0-){
+            if(nums[i]!=0){
                 Swap(nums,i,non_Zero);
                 non_Zero++;
             }
