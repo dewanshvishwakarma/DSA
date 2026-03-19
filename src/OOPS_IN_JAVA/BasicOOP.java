@@ -1,7 +1,7 @@
 package OOPS_IN_JAVA;
 
 public class BasicOOP {
-   static class Person{
+    class Person{
         int age;
         String name;
 
@@ -11,7 +11,7 @@ public class BasicOOP {
         }
 
     }
-    public static void main(String[] args){
+    public void main(String[] args){
         Person p1= new Person();
         p1.age=18;
         p1.name="dewansh";
