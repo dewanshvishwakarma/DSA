@@ -1,3 +1,5 @@
+package arrays;
+
 public class missing_Number {
 
         static int missingNumber(int[] nums) {

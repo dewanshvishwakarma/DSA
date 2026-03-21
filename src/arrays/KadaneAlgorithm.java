@@ -1,3 +1,5 @@
+package arrays;
+
 public class KadaneAlgorithm {
     static int Kadane(int[] a){
         int n= a.length;

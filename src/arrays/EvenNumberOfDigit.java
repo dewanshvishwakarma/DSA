@@ -1,3 +1,5 @@
+package arrays;
+
 public class EvenNumberOfDigit {
     static boolean  NumberHasEven(int n){
         int count=0;

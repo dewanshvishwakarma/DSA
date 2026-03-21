@@ -1,3 +1,5 @@
+package arrays;
+
 public class Merge {
     static int[]  MergeTwoArray(int[] a,int[] b){
         int[] merge =new int[a.length+b.length];
