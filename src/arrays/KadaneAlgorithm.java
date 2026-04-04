@@ -5,7 +5,6 @@ public class KadaneAlgorithm {
         int n= a.length;
         int maxSum=a[0];
         int currentSum=0;
-
         for (int i=0;i<n;i++) {
             currentSum = currentSum + a[i];
 
