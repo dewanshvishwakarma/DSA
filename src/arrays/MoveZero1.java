@@ -1,6 +1,6 @@
 package arrays;
 
-public class MoveZero {
+public class MoveZero1 {
     static void Swap(int[] nums, int i, int j){
         int temp = nums[i];
         nums[i] = nums[j];
