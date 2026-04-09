@@ -58,7 +58,23 @@ public class Majority_element {
         return candidate;
     }
 
-
+static int majority5(int[] a){
+        int candidate=a[0];
+        int count=0;
+        for(int num:a){
+            if (num==candidate){
+                count++;
+            }
+            else {
+                count--;
+                if (count==0){
+                    candidate=num;
+                    count++;
+                }
+            }
+        }
+        return candidate;
+    }
 
    public static void main(String[] args) {
         int[] arr={2,2,1,1,1,2,2};
@@ -73,5 +89,8 @@ public class Majority_element {
 
        int result4=Majority4(arr);
        System.out.println(result4);
+
+       int result5=majority5(arr);
+       System.out.println(result5);
     }
 }
