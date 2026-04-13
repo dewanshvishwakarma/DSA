@@ -28,7 +28,6 @@ public class Contain_duplicate {
         }
         return false;
     }
-
 //    approach 3: hash map -> count occurrence
 
     static boolean checkDuplicate3(int[] a){
@@ -41,12 +40,10 @@ public class Contain_duplicate {
         }
         return false;
     }
-
 /*    approach 4:A HashSet stores unique elements only
 While traversing:
 If element already exists → duplicate found → return true
 Else → add it to set*/
-
     static boolean checkDuplicate4(int[] a){
         HashSet<Integer> set=new HashSet<>();
         for (int num: a){
