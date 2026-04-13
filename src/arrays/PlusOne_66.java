@@ -25,6 +25,13 @@ Incrementing by one gives 9 + 1 = 10.
 Thus, the result should be [1,0].*/
 
 public class PlusOne_66 {
+    static void print(int[] a){
+        for ( int i=0;i< a.length;i++){
+            System.out.print(a[i]+ " ");
+
+        }
+        System.out.println();
+    }
     static int[] plusOne(int[] a){
         int n=a.length;
      for (int i=n-1;i>=0;i--){
@@ -41,9 +48,11 @@ public class PlusOne_66 {
     }
     static void main(String[] args) {
         int[] arr={2,2,3};
+        int [] arr1={9,9,9};
         int[] array=plusOne(arr);
-        for(int i=0;i< array.length;i++){
-            System.out.println(array[i]+" ");
-        }
+        int[] array1=plusOne(arr);
+        print(arr);
+        print(arr1);
+
     }
 }
