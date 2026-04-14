@@ -6,7 +6,7 @@ public class SumOfArray {
     public static void main(String[] args){
         Scanner sc=new Scanner(System.in);
 
-        System.out.println("enter the size of array first array : ");
+        System.out.println("enter size of array first array : ");
         int n1=sc.nextInt();
         int[] arr1=new int[n1];
 
