@@ -21,7 +21,7 @@ public class ThirdLargest {
         return T_largest;
     }
     public static void main(String[] args){
-        int[] arr={12,1,11,20,7,45,79};
+        int[] arr={12,1,11,20,7,45};
         int output=Third_Largest(arr);
         System.out.println("third largest of an array is " + output);
     }
