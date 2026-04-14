@@ -21,7 +21,11 @@ public class BinarySearch {
     }
     static void main(String[] args) {
         int[] a={2,4,6,8,10,12,14,16};
-        int result=binary(a,11);
+        int result=binary(a,14);
+
+        int[] b={2,4,6,8,10,12,15,18,17};
+        int result1=binary(b,20);
         System.out.println(result);
+        System.out.println(result1);
     }
 }
