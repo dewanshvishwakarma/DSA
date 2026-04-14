@@ -55,7 +55,7 @@ Else → add it to set*/
         return false;
     }
     public static void main(String[] args) {
-        int[] arr={2,1,0};
+        int[] arr={2,5,6,6,8};
         boolean result1=checkDuplicate1(arr);
         System.out.println(result1);
 
