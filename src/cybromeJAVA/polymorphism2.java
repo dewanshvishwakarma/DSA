@@ -16,5 +16,5 @@ class c extends p{
 public class polymorphism2 {
     c c1=new c();
     p p2=new c();
-    p2.m1(10)
+    p2.m1(10);
 }
