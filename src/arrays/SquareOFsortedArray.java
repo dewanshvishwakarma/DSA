@@ -5,9 +5,7 @@ import java.util.Arrays;
 public class SquareOFsortedArray {
 //    approach 1 : make square array and sort tem by Arrays.sort();
     static int[] Square(int[] a){
-        int n=a.length;
-//        int[] result=new int[n];
-        for (int i=0;i<n;i++){
+        for (int i=0;i<a.length;i++){
             a[i]=a[i]*a[i];
         }
         Arrays.sort(a);
@@ -37,9 +35,30 @@ public class SquareOFsortedArray {
         }
         return result;
     }
+
+//    solve by two pinter but by while loop
+    static int[] Square2(int[] a){
+        int i=0;
+        int j=a.length-1;
+        int[] result=new int[a.length];
+        int k= result.length-1;
+        while (i<=j){
+            if (Math.abs(a[i])>Math.abs(a[j])){
+                result[k]=a[i]*a[i];
+                i++;
+            }else {
+                result[k]=a[j]*a[j];
+                j--;
+            }
+            k--;
+        }
+        return result;
+    }
+
+
     public static void main(String[] args){
-        int[] arr={1,9,4,2,5,6,7};
-        int[] output=TwoPointer(arr);
+        int[] arr={-4,-1,0,3,10};
+        int[] output=Square2(arr);
         for (int i=0;i< output.length;i++){
             System.out.print(output[i] + " ");
         }
