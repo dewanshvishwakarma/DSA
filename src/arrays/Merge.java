@@ -31,13 +31,33 @@ public class Merge {
             merge[k++]=b[j++];
         }
         return merge;
-    };
+    }
+
 
     static void print(int[] a){
         for (int i=0;i< a.length;i++){
             System.out.print(a[i]+" ");
         }
         System.out.println();
+    }
+
+
+    static  void sorted_two_Pointer(int[] a,int m,int[] b,int n){
+        int i=m-1;
+        int j=n-1;
+        int k=m+n-1;
+        while(j>=0){
+            if(i>=0 && a[i]>b[j]){
+                a[k]=a[i];
+                k--;
+                i--;
+            }
+            else{
+                a[k]=b[j];
+                k--;
+                j--;
+            }
+        }
     }
     public static void main(String[] args){
         int[] arr1={1,2,3,4,5};
@@ -50,5 +70,10 @@ public class Merge {
         int[] B={2,2,4,6};
         int[] result=SortedArray(A,B);
         print(result);
+
+        int[] a={1,2,3,0,0,0};
+        int[] b={2,5,6};
+        sorted_two_Pointer(a,3,b,3);
+        print(a);
     }
 }
