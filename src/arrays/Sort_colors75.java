@@ -38,6 +38,30 @@ public class Sort_colors75 {
         }
     }
 
+    static void sort_color2(int[] a){
+        int s=0;
+        int m=0;
+        int e= a.length-1;
+
+        while (m<=e){
+            if (a[m]==0){
+                int temp=a[m];
+                a[m]=a[s];
+                a[s]=temp;
+                s++;
+                m++;
+            }
+            else if (a[m]==1){
+                m++;
+            }
+           else{
+                int temp=a[m];
+                a[m]=a[e];
+                a[e]=temp;
+                e--;
+            }
+        }
+    }
     static void print(int[] a){
         for (int i=0;i<a.length;i++){
             System.out.println(a[i]+ " ");
@@ -45,7 +69,7 @@ public class Sort_colors75 {
     }
     public static void main(String[] args){
         int[] a={0,1,0,2,2,0,1,1};
-        sort_color1(a);
+        sort_color2(a);
         print(a);
 
     }
