@@ -20,8 +20,9 @@ public class BinarySearch {
         return -1;
     }
     static void main(String[] args) {
-        int[] a={2,4,6,8,10,12,14,16};
+        int[] a={2,4,6,8,10,12,14,16,20,75,55,47};
         int result=binary(a,14);
+        int result2=binary(a,75);
 
         int[] b={2,4,6,8,10,12,15,18,17};
         int result1=binary(b,20);
