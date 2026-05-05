@@ -56,7 +56,7 @@ public class pairSum {
         for(int i=0;i<n;i++){
             arr[i]=sc.nextInt();
         }
-        System.out.println("enter the target :");
+        System.out.println("enter the target:");
         int target= sc.nextInt();
 //        System.out.println(pairSumFunction(arr,target));
 //        int[] ans =TwoSum(arr,target);
