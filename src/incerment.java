@@ -3,5 +3,6 @@ public class incerment {
         int number=10;
         System.out.println(number++ + ++number);
         System.out.println(++number + number++);
+        System.out.println(number);
     }
 }
