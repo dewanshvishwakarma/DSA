@@ -24,5 +24,6 @@ public class Contain_Most_Water {
         int[] height={1,8,6,2,5,4,8,3,7,10};
         int result=MAX_AREA(height);
         System.out.println("maximum area is " + result);
+ //        maximum area is 64
     }
 }
