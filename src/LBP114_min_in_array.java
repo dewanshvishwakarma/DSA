@@ -16,6 +16,7 @@ public class LBP114_min_in_array {
                 min=a[i];
             }
         }
+
         System.out.print(min);
      }
 }
