@@ -23,5 +23,6 @@ public class LBP116_second_max {
         }
         System.out.print(second);
 
+
     }
 }
