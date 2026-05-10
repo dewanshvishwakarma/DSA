@@ -1,4 +1,3 @@
-package String;
 import java.util.Scanner;
 
 public class LBP116_second_max {
