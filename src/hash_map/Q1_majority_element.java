@@ -25,7 +25,5 @@ public class Q1_majority_element {
                 System.out.println(key);
             }
         }
-
-
     }
 }
