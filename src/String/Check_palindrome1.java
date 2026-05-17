@@ -7,6 +7,22 @@ public class Check_palindrome1 {
         int j=s.length()-1;
 
         while (i<j){
+            if (s.charAt(i)==s.charAt(j)){
+                i++;
+                j--;
+            }
+            else{
+                return false;
+            }
+        }
+        return true;
+    }
+
+// more cleaner version
+    static boolean check2(String s){
+        int i=0;
+        int j=s.length();
+        while (i<j){
             if (s.charAt(i)!=s.charAt(j)){
                 return false;
             }
@@ -19,6 +35,7 @@ public class Check_palindrome1 {
     String name ="madam";
     boolean result=check(name);
         System.out.println(result);
+
 
     if (check(name)){
         System.out.println("yes palindrome");
