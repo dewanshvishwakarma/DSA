@@ -1,6 +1,6 @@
 package arrays;
 
-public class LC303_running_sum {
+public class LC1480_running_sum {
     public int[] runningSum(int[] nums) {
         int n=nums.length;
 
