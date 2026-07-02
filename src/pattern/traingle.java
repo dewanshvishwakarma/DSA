@@ -1,9 +1,11 @@
 package pattern;
 
+import java.util.Scanner;
+
 public class traingle {
     public static void main(String[] args) {
 
-        int n = 4;
+        Scanner sc=new Scanner(System.in);
 
         for (int i = n; i >= 1; i--) {
 
