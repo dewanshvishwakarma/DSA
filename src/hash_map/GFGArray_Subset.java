@@ -1,7 +1,7 @@
 package hash_map;
 
 import java.util.HashMap;
-
+//GFG=https://www.geeksforgeeks.org/problems/array-subset-of-another-array2317/1?page=1&category=Arrays,Java&difficulty=Basic&sortBy=submissions
 public class GFGArray_Subset {
     static boolean isSubset(int[] a,int[] b){
         HashMap<Integer,Integer> map=new HashMap<>();
