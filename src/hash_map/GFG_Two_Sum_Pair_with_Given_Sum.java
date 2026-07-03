@@ -1,7 +1,7 @@
 package hash_map;
 
 import java.util.HashMap;
-
+//https://www.geeksforgeeks.org/problems/key-pair5616/1?page=2&category=Arrays,Java&sortBy=submissions
 public class GFG_Two_Sum_Pair_with_Given_Sum {
    static boolean twoSum(int[] a, int target){
         HashMap<Integer,Integer> map=new HashMap<>();
