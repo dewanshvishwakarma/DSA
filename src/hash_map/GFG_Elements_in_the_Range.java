@@ -2,6 +2,15 @@ package hash_map;
 
 import java.util.HashMap;
 //https://www.geeksforgeeks.org/problems/elements-in-the-range2834/1?page=2&category=Arrays,Java&difficulty=Basic&sortBy=submissions
+
+
+//Given an array arr[] containing distinct positive integers,
+//and two integers start and end defining a range. Determine if the array
+//contains all elements within inclusive range [start, end].
+//Note: If the array contains all elements in the given range return true
+//otherwise return false.
+
+
 public class GFG_Elements_in_the_Range {
     public static boolean checkElements(int start, int end, int[] arr){
         HashMap<Integer,Integer> map=new HashMap<>();
