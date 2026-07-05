@@ -32,7 +32,7 @@ public class LC496_next_greater_element1 {
 return ans;
     }
     public static void main(String[] args) {
-int[] a={4,1,5};
+int[] a={4,1,5,4};
 int[] b={1,3,4,2,5};
 int[] ans=nextGreaterElement(a,b);
         System.out.println(Arrays.toString(ans));
