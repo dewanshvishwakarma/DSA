@@ -5,7 +5,7 @@ package String;
 //https://www.geeksforgeeks.org/problems/display-longest-name0853/1?page=2&category=Arrays,Java&difficulty=Basic&sortBy=submissions
 
 public class GFG_Longest_Word {
-    public String longest(String[] arr){
+    static String longest(String[] arr){
         String ans=arr[0];
         for (int i=0;i< arr.length;i++){
             if (ans.length()<arr[i].length()){
@@ -15,6 +15,9 @@ public class GFG_Longest_Word {
         return ans;
     }
     public static void main(String[] args) {
+String[] s={"Geek", "Geeks", "Geeksfor", "GeeksforGeek", "GeeksforGeeks"};
+String ans=longest(s);
+        System.out.println(ans);
 
     }
 }
