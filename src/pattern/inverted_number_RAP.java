@@ -13,5 +13,12 @@ public class inverted_number_RAP {
 
     public static void main(String[] args) {
         pattern(5);
+
+//
+//        12345
+//        1234
+//        123
+//        12
+//        1
     }
 }
