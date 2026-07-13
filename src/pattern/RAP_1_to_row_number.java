@@ -11,5 +11,12 @@ public class RAP_1_to_row_number {
     }
     public static void main(String[] args) {
         pyramid(5);
+
+
+//        1
+//        22
+//        333
+//        4444
+//        55555
     }
 }
