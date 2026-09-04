@@ -11,6 +11,8 @@ public class right_rotate_by_1 {
     }
 
     public static void main(String[] args) {
+        int[] a={10,20,30,40,50};
+
 
     }
 
