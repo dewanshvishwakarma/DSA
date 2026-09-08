@@ -1,5 +1,5 @@
 package String;
-
+//make an array of frequency count of String s
 public class String_frequency {
     static int[] count(String s){
         s.toLowerCase();
@@ -11,7 +11,6 @@ public class String_frequency {
             ans[index]=ans[index]+1;
         }return ans;
 
-
     }
     public static void main(String[] args) {
         String s="aaaaaaaaaaaa";
@@ -20,7 +19,5 @@ public class String_frequency {
         for (int i=0;i< ans.length;i++){
             System.out.println(ch++ + "-"  + ans[i]);
         }
-
-
     }
 }
