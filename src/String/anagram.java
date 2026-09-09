@@ -21,6 +21,7 @@ public class anagram {
             char c=t.charAt(i);
             if (!map.containsKey(c)){
                 return false;
+
             }
             map.put(c,map.get(c)-1);
             if (map.get(c)<0){
