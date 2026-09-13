@@ -1,8 +1,10 @@
 package String;
-
 import java.util.HashMap;
+//Given a string s, find the first non-repeating character in it and return its index. If it does not exist, return -1.
+//leetcode 387
 
-public class firstUniqueCharacterInString {
+
+public class firstUniqueCharacterInString {//using the hashmap to solve
     static int FUC(String s){
         HashMap<Character,Integer> map=new HashMap<>();
         int n=s.length();
@@ -21,11 +23,27 @@ public class firstUniqueCharacterInString {
         return -1;
     }
 
-
+static int FUC1(String s){
+        int n=s.length();
+        int[] ans=new int[26];
+        for (int i=0;i<n;i++){
+            char ch=s.charAt(i);
+            int index=ch-'a';
+            ans[index]=ans[index]+1;
+        }
+        for (int i=0;i<n;i++){
+            char ch2=s.charAt(i);
+            int index2=ch2-'a';
+            if (ans[index2]==1){
+                return i;
+            }
+        }
+        return -1;
+}
 
     public static void main(String[] args){
-        String s="ee";
-        int result=FUC(s);
+        String s="dee";
+        int result=FUC1(s);
         System.out.println("first unique character is " + result );
 
     }
