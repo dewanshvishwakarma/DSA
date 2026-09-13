@@ -25,6 +25,30 @@ public class Ransom_Note383 {
         return count==0;
     }
 
+
+    //use an array
+    static boolean canConstruct1(String r,String m){
+        int[] a=new int[26];
+        for (int i=0;i<r.length();i++){
+            int index=r.charAt(i)-'a';
+            a[index]=a[index]+1;
+        }
+
+        for (int i=0;i<m.length();i++){
+            int index2=m.charAt(i)-'a';
+            if (a[index2]>0) {
+                a[index2] = a[index2] - 1;
+            }
+        }
+
+        for (int i=0;i<a.length;i++){
+            if (a[i]!=0){
+                return false;
+            }
+        }
+        return true;
+    }
+
     public static void main(String[] args) {
 String r="dewa";
 String m="awedg";
