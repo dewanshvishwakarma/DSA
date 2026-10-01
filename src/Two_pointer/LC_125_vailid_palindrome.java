@@ -1,5 +1,9 @@
 package Two_pointer;
 
+
+//https://leetcode.com/problems/valid-palindrome/
+
+
 public class LC_125_vailid_palindrome {
     public boolean isPalindrome(String s) {
         int i=0;
