@@ -36,5 +36,48 @@ public class Lc_2161_PartitionArrayAccording_toGivenPivot {
         }
         return ans;
     }
+
+    static public int[] pivotArray2(int[] nums, int pivot){
+        int n =nums.length;
+        int[] ans=new int[n];
+        int e=0;
+        int g=0;
+        int s=0;
+        for(int i=0;i<n;i++){
+            if(nums[i]==pivot){
+                e++;
+            }else if(nums[i]>pivot){
+                g++;
+            }else{
+                s++;
+            }
+        }
+
+        int ss=0;
+        int ee=s;
+        int gg=s+e;
+        for(int i=0;i<n;i++){
+            if(nums[i]==pivot){
+                ans[ee]=nums[i];
+                ee++;
+            }else if(nums[i]>pivot){
+                ans[gg]=nums[i];
+                gg++;
+            }else{
+                ans[ss]=nums[i];
+                ss++;
+            }
+        }
+
+return  ans;
+    }
+
+    public static void main(String[] args){
+        int[] a={9,12,5,10,14,3,10};
+        int[] ans=pivotArray2(a,10);
+        for (int i=0;i<ans.length;i++){
+            System.out.println(ans[i] + " ");
+        }
+    }
 }
 
