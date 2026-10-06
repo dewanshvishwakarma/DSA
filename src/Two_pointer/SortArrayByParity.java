@@ -1,4 +1,4 @@
-package Two_pointer.Lc_905_905;
+package Two_pointer;
 
 public class SortArrayByParity {
    static public int[] sortArrayByParity(int[] nums){
