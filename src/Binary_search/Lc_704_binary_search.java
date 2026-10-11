@@ -6,7 +6,7 @@ public class Lc_704_binary_search {
         int n=a.length;
         int i=0;
         int j=n-1;
-        while(i<-j){
+        while(i<=j){
             int mid=i+(j-i)/2;
             if (a[mid]==target){
                 return mid;
@@ -20,6 +20,8 @@ public class Lc_704_binary_search {
     }
 
     public static void main(String[] args) {
-
+        int[] a={-1,0,3,5,9,12};
+        int ans=search(a,9);
+        System.out.println("element are at index" + ans);
     }
 }
