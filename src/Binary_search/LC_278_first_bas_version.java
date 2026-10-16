@@ -7,8 +7,13 @@ public class LC_278_first_bas_version {
         while (i<j){
             int mid=i+(j-i)/2;
             boolean result=isBadVerson(mid);
-            if(i)
+            if(result){
+                j=mid;
+            }else{
+                i=mid+1;
+            }
 
         }
+        return i;
     }
 }
