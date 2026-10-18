@@ -2,6 +2,7 @@ package Binary_search;
 //https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/description/
 public class LC_34_Find_First_and_LastPositionOfElement {
 
+    //using binary search
     static int find_first(int[] a,int target,int n){
             int i=0;
             int j=n-1;
@@ -46,12 +47,29 @@ public class LC_34_Find_First_and_LastPositionOfElement {
             return new int[]{l,r};
    }
 
+   //linear brute force approach
+   static public int[] search_by_linear(int[] a,int target){
+        int f=-1;
+        int l=-1;
+        for (int i=0;i<a.length;i++){
+            if(a[i]==target){
+                if(f==-1){
+                    f=i;
+                }
+                l=i;
+            }
+        }
+        return new int[]{f,l};
+   }
+
     public static void main(String[] args) {
         int[] a={5,7,7,8,9,9,9,9,9,10};
-        int[] ans=searchRange(a,9);
+        int[] ans=search_by_linear(a,9);
         for (int i=0;i< ans.length;i++){
             System.out.println(ans[i] + " ");
         }
+
+
     }
 }
 
