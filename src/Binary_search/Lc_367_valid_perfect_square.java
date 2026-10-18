@@ -8,7 +8,7 @@ public class Lc_367_valid_perfect_square {
         int j=num;
         while (i<=j){
             int mid=i+(j-i)/2;
-            long square=(long) mid*mid;
+            long square=(long) mid*mid;//Use long for the square calculation to avoid integer overflow.
 
             if (square==num){
                 return true;
