@@ -1,7 +1,7 @@
 package Binary_search;
 
 import java.util.Scanner;
-
+//https://leetcode.com/problems/valid-perfect-square/description/
 public class Lc_367_valid_perfect_square {
     static public boolean isPerfectSquare(int num){
         int i=1;
