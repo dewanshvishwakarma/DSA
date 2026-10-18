@@ -1,5 +1,5 @@
 package Binary_search;
-
+//https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/description/
 public class LC_34_Find_First_and_LastPositionOfElement {
 
     static int find_first(int[] a,int target,int n){
