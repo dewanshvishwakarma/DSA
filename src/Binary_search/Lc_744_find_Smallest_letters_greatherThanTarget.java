@@ -1,5 +1,7 @@
 package Binary_search;
 
+import javax.xml.stream.events.Characters;
+
 public class Lc_744_find_Smallest_letters_greatherThanTarget {
    static public char nextGreatestLetter(char[] letters, char target){
        int n=letters.length;
@@ -21,5 +23,24 @@ public class Lc_744_find_Smallest_letters_greatherThanTarget {
    }
 
 //apply brute force approach
-//    public char nextGreatestLetter2(char[] letters, char target)
+    static char nextGreatestLetter2(char[] letters, char target){
+       int n= letters.length;
+       char result=letters[0];
+
+       for (int i=0;i<n;i++){
+           if(letters[i]>target){
+               result=letters[i];
+               return result;
+           }
+       }
+       return letters[0];
+    }
+
+
+    public static void main(String[] args) {
+        char[] ch={'c','f','j'};
+        char r=nextGreatestLetter2(ch,'d');
+        System.out.println(r);
+
+    }
 }
