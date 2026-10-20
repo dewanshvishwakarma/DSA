@@ -29,6 +29,8 @@ public class LC_33_search_in_rotatd_sorted_array {
         return -1;
     }
     public static void main(String[] args) {
-
+        int[] a={3,4,5,6,7,0,1,2};
+        int ans=search(a,5);
+        System.out.println(ans);
     }
 }
