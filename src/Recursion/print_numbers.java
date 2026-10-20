@@ -15,5 +15,6 @@ public class print_numbers {
 
 //    Base case:The condition that stops recursion
 //    Recursive case:The part where the method calls itself with a smaller or simpler problem
-
+//    recursion tree diagram: how problem broken into sub problem
+//    call stack diagram:
 }
