@@ -9,9 +9,23 @@ public class print_numbers {
         print(n-1);// recursive case
     }
 
+
+    static void print2(int n){
+        if (n==0){
+            return;
+        }
+
+        print2(n-1);
+        System.out.println(n);
+    }
+
     public static void main(String[] args) {
         print(5);
+        System.out.println("****************");
+        print2(5);
     }
+
+
 
 //    Base case:The condition that stops recursion
 //    Recursive case:The part where the method calls itself with a smaller or simpler problem
