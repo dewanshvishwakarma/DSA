@@ -1,7 +1,5 @@
 package TREE;
-
-public class node_class {
-static class Node{
+ class Node{
     int data;
     Node left,right;
 
@@ -9,6 +7,8 @@ static class Node{
         this.data=data;
     }
 }
+public class node_class {
+
     public static void main(String[] args) {
         Node root=new Node(10);
         root.left=new Node(20);
