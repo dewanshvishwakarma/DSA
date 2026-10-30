@@ -27,7 +27,7 @@ public class LC100_same_tree {
 
         Node q=new Node(1);
         q.left=new Node(2);
-//        q.right=new Node(3);
+        q.right=new Node(3);
 
         boolean ans=isSameTree(p,q);
         System.out.println("is the tree are same or not = " + ans);
