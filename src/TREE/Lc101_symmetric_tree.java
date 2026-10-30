@@ -21,6 +21,16 @@ public class Lc101_symmetric_tree {
         return left && right;
     }
     public static void main(String[] args) {
+        Node p=new Node(1);
+        p.left=new Node(2);
+        p.right=new Node(3);
 
+
+        Node q=new Node(1);
+        q.left=new Node(3);
+        q.right=new Node(2);
+
+        boolean ans=issymTree(p,q);
+        System.out.println(ans);
     }
 }
