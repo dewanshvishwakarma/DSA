@@ -46,5 +46,14 @@ public class LC102_level_order_traversal {
 
         root.right.left=new Node(6);
         root.right.right=new Node(7);
+
+        List<List<Integer>> ans=level_order(root);
+
+        for (int i=0;i<ans.size();i++){
+            for (int j=0;j<ans.get(i).size();j++){
+                System.out.println(ans.get(i).get(j) +  " ");
+            }
+            System.out.println();
+        }
     }
 }
