@@ -5,7 +5,7 @@ import java.util.*;
 
 public class LC_103_zig_zag {
 
-    public List<List<Integer>> zigzagLevelOrder(Node root){
+    static public List<List<Integer>> zigzagLevelOrder(Node root){
         List<List<Integer>> ans = new ArrayList<>();
         Queue<Node> q = new LinkedList<>();
 
@@ -49,6 +49,13 @@ return ans;
         root.right.left=new Node(6);
         root.right.right=new Node(7);
 
+        List<List<Integer>> ans=zigzagLevelOrder(root);
 
+        for (int i=0;i<ans.size();i++){
+            for (int j=0;j<ans.get(i).size();j++){
+                System.out.println(ans.get(i).get(j) +  " ");
+            }
+            System.out.println();
+        }
     }
 }
