@@ -10,5 +10,6 @@ public class LC_104_maximum_depth_of_binaryTree {
         int r=maxDepth(root.right);
 
         return Math.max(l,r)+1;
+
     }
 }
