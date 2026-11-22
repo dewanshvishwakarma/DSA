@@ -1,20 +1,19 @@
 package TREE;
-import javax.swing.tree.TreeNode;
 import java.util.*;
 public class LC662_max_bidth_in_binary_tree {
     class Solution {
 
         class Pair {
-            TreeNode node;
+            Node node;
             long index;
 
-            Pair(TreeNode node, long index) {
+            Pair(Node node, long index) {
                 this.node = node;
                 this.index = index;
             }
         }
 
-        public int widthOfBinaryTree(TreeNode root) {
+        public int widthOfBinaryTree(Node root) {
 
             if (root == null) return 0;
 
@@ -35,7 +34,7 @@ public class LC662_max_bidth_in_binary_tree {
 
                     Pair p = q.poll();
 
-                    TreeNode curr = p.node;
+                    Node curr = p.node;
 
                     // Normalize index at each level
                     long index = p.index - minIndex;
