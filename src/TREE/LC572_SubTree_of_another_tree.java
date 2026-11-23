@@ -2,7 +2,7 @@ package TREE;
 
 public class LC572_SubTree_of_another_tree {
     class Solution {
-        public boolean isSubtree(Node root, TreeNode subRoot) {
+        public boolean isSubtree(Node root, Node subRoot) {
 
             if (subRoot == null) {
                 return true;
@@ -20,7 +20,7 @@ public class LC572_SubTree_of_another_tree {
                     isSubtree(root.right, subRoot);
         }
 
-        private boolean isSameTree(TreeNode p, TreeNode q) {
+        private boolean isSameTree(Node p,Node q) {
 
             if (p == null && q == null) {
                 return true;
@@ -30,7 +30,7 @@ public class LC572_SubTree_of_another_tree {
                 return false;
             }
 
-            if (p.val != q.val) {
+            if (p.data != q.data) {
                 return false;
             }
 
