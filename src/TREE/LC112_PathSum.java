@@ -11,4 +11,5 @@ public class LC112_PathSum {
                     hasPathSum(root.left, sum - root.data) || //
                             hasPathSum(root.right, sum - root.data);
         }
+
 }
